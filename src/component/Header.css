@@ -1,0 +1,35 @@
+header {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: 6vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #34263a;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  height: 80%;
+  font-size: 25px;
+  background-color: #34263a;
+}
+
+.logo-mentali {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+  margin-left: 10px;
+}
+
+.navbar > a {
+  text-decoration: none;
+  color: white;
+}

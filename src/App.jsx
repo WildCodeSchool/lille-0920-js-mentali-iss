@@ -1,8 +1,10 @@
 import './App.css';
+import Header from './component/Header';
 
 function App() {
   return (
     <main className="container">
+      <Header />
       <div className="item">
         <h1>Hello world !</h1>
       </div>
