@@ -1,39 +1,75 @@
-body {
-  background-color: #000911;
-  color: #97d8eb;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.pageOption {
+  overflow: hidden;
+  position: relative;
+  width: 40em;
+  height: 27em;
 }
 
-code {
-  color: #000911;
-  font-weight: bold;
-  background-color: #97d8eb;
-  padding: 0.3rem;
-  border-radius: 3px;
+.option,
+.option img {
+  width: 100%;
+  height: 100%;
+  background-color: #666666;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
+.option {
+  overflow: hidden;
+  position: absolute;
+  /* arctan(27 / 40) = 34.01935deg 
+ * need to skew by 90deg - 34.01935deg = 55.98065deg
+*/
+  transform: skewX(-55.98deg);
 }
 
-.item {
-  text-align: center;
-  width: fit-content;
+.option:first-child {
+  left: -0.25em;
+  transform-origin: top left;
 }
 
-.item > img {
-  max-width: 80vw;
+.option:last-child {
+  right: -0.25em;
+  transform-origin: bottom right;
 }
 
-.container::after {
-  content: '';
-  height: 15vh;
+.option img {
+  transform: skewX(55.98deg);
+  transform-origin: inherit;
+}
+
+img#iss:hover {
+  opacity: 0.3;
+  transition: 0.5s ease;
+}
+
+img#galerie:hover {
+  opacity: 0.3;
+  transition: 0.5s ease;
+}
+
+.option h4 {
+  display: none;
+}
+
+.option:hover h4 {
+  display: block;
+  position: absolute;
+  top: 50px;
+  color: white;
+  right: 230px;
+  font-size: 2.5em;
+  transform: skewX(55.98deg);
+}
+
+.option h3 {
+  display: none;
+}
+
+.option:hover h3 {
+  display: block;
+  position: absolute;
+  color: white;
+  top: 250px;
+  left: 250px;
+  font-size: 2.5em;
+  transform: skewX(55.98deg);
 }

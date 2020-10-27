@@ -1,20 +1,21 @@
 import './App.css';
+import iss from '../public/photos/iss.jpg';
+import galerie from '../public/photos/galerie.jpg';
 
 function App() {
   return (
-    <main className="container">
-      <div className="item">
-        <h1>Hello world !</h1>
+    <div className="App">
+      <div className="pageOption">
+        <a href="#b" className="option" data-inf="photo">
+          <img src={iss} className="image" id="iss" alt="ISS" />
+          <h4>ISS</h4>
+        </a>
+        <a href="#b" className="option" data-inf="cinema">
+          <img src={galerie} className="image" id="galerie" alt="galerie" />
+          <h3>Galerie</h3>
+        </a>
       </div>
-      <div className="item">
-        <p>Welcome to your fresh, lightweight, React App ! &#127752;</p>
-      </div>
-      <div className="item">
-        <p>
-          Start in the <code>App.jsx</code> component !
-        </p>
-      </div>
-    </main>
+    </div>
   );
 }
 
