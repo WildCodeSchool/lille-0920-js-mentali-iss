@@ -4,19 +4,23 @@ const Header = () => {
   return (
     <header>
       <div className="logo-iss">
-        <a href="#1">
-          <img
-            className="logo-mentali"
-            src="https://via.placeholder.com/200x50"
-            alt="logo"
-          />
+        <a className="logo-mentali" href="#1">
+          <img src="https://via.placeholder.com/200x50" alt="logo" />
         </a>
       </div>
       <ul className="navbar">
-        <li>ISS</li>
-        <li>Galerie</li>
-        <li>Rover on Mars</li>
-        <li>Contact</li>
+        <a className="link1" href="#2">
+          <li>ISS</li>
+        </a>
+        <a href="#2">
+          <li>Galerie</li>
+        </a>
+        <a href="#2">
+          <li>Rover in Mars</li>
+        </a>
+        <a href="#2">
+          <li>Contact</li>
+        </a>
       </ul>
     </header>
   );

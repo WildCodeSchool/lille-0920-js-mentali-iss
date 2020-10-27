@@ -16,13 +16,22 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: solid 2px green;
   width: 60%;
-  height: 100%;
+  height: 80%;
+  border: solid 2px green;
   color: black;
   font-size: 25px;
 }
+
 .logo-mentali {
   display: flex;
   align-items: center;
+  width: 80%;
+  height: 80%;
+  margin-left: 10px;
+}
+
+.navbar > a {
+  text-decoration: none;
+  color: black;
 }
