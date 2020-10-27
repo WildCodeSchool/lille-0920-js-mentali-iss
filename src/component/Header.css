@@ -7,8 +7,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: white;
-  border: solid 4px red;
+  background:black;
 }
 
 .navbar {
@@ -18,9 +17,8 @@ header {
   align-items: center;
   width: 60%;
   height: 80%;
-  border: solid 2px green;
-  color: black;
   font-size: 25px;
+  background-color: black;
 }
 
 .logo-mentali {
@@ -33,5 +31,5 @@ header {
 
 .navbar > a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
