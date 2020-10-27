@@ -9,16 +9,16 @@ const Header = () => {
         </a>
       </div>
       <ul className="navbar">
-        <a className="link1" href="#2">
+        <a className="navLink" href="#2">
           <li>ISS</li>
         </a>
-        <a href="#2">
+        <a className="navLink" href="#2">
           <li>Galerie</li>
         </a>
-        <a href="#2">
+        <a className="navLink" href="#2">
           <li>Rover in Mars</li>
         </a>
-        <a href="#2">
+        <a className="navLink" href="#2">
           <li>Contact</li>
         </a>
       </ul>
