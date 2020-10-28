@@ -1,8 +1,10 @@
 import './App.css';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <main className="container">
+    <main className="page-container">
+      <div className="content-wrap" />
       <div className="item">
         <h1>Hello world !</h1>
       </div>
@@ -14,6 +16,7 @@ function App() {
           Start in the <code>App.jsx</code> component !
         </p>
       </div>
+      <Footer />
     </main>
   );
 }
