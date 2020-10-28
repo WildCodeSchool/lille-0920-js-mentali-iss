@@ -10,12 +10,12 @@ const Footer = () => {
             <h4>A PROPOS</h4>
             <p className="text-justify">
               Mental-ISS.com fournit une information complète concernant la
-              station spatiale internationale. Mental-ISS se consacre <br />à
+              station spatiale internationale. Mental-ISS se consacre à <br />
               maintenir la position de l&apos;ISS sur une carte en temps réel, à
               fournir les données permettant d&apos;observer la station depuis{' '}
               <br />
               chez soi, de mettre à disposition les photos de l&apos;espace par
-              par la NASA et de suivre le robot Curiosity sur Mars
+              la NASA.
             </p>
           </div>
           {/* Column2 */}
@@ -65,7 +65,7 @@ const Footer = () => {
         <hr />
         <div className="row2">
           <p className="col-sm">
-            &copy;{new Date().getFullYear} MENTAL-ISS | All rights reserved |
+            &copy;{new Date().getFullYear()} MENTAL-ISS | All rights reserved |
             Terms Of Service | Privacy
           </p>
         </div>
